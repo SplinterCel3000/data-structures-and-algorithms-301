@@ -135,11 +135,8 @@ describe('Testing challenge 4', () => {
 ------------------------------------------------------------------------------------------------ */
 
 const matchMonth = (input) => {
-  let regex = /Oct(ober)?| oct(ober)/;
-  if(input.match(regex) === true){
-      return input.match(regex);
-  }
-
+  let regex = /^[Oo]ct(ober)?$/
+  return regex.test(input);
 };
 
 /* ------------------------------------------------------------------------------------------------
